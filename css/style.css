@@ -1,0 +1,166 @@
+@font-face {
+    font-family: Outfit-Bold;
+    src: url("/fonts/Outfit-Bold.ttf");
+}
+
+@font-face {
+    font-family: Outfit-reqular;
+    src: url("/fonts/Outfit-Regular.ttf");
+}
+
+body {
+    background-color: hsl(212, 45%, 89%);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+figure {
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin: 15px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.qr-code-card {
+    background-color: hsl(0, 0%, 100%);
+    width: 20%;
+    border-radius: 15px;
+}
+
+.qr-image {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.qr-title {
+    font-size: 18pt;
+    font-family: Outfit-Bold;
+    margin: 20px;
+}
+
+.qr-tips {
+    font-family: Outfit-reqular;
+    font-size: 13pt;
+    margin: 0 25px 25px 25px;
+    color: rgba(157, 160, 168, 255);
+}
+
+
+/* Media Queries */
+
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .qr-code-card {
+        width: 30%;
+    }
+
+    .qr-title {
+        font-size: 20px;
+    }
+
+    .qr-tips {
+        font-size: 11pt;
+    }
+
+    .attribution {
+        font-size: 20px;
+    }
+
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .qr-code-card {
+        width: 55%;
+    }
+
+    .qr-title {
+        font-size: 31px;
+    }
+
+    .qr-tips {
+        font-size: 18pt;
+    }
+
+    .attribution {
+        font-size: 15px;
+    }
+}
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .qr-code-card {
+        width: 60%;
+    }
+
+    .qr-title {
+        font-size: 17px;
+    }
+
+    .qr-tips {
+        font-size: 11pt;
+    }
+
+    .attribution {
+        font-size: 12px;
+    }
+
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .qr-code-card {
+        width: 80%;
+    }
+
+    .qr-title {
+        font-size: 16px;
+    }
+
+    .qr-tips {
+        font-size: 9pt;
+    }
+
+    .attribution {
+        font-size: 10px;
+    }
+}
+
