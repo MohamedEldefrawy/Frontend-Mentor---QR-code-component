@@ -8,6 +8,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
   - [Screenshot](#screenshot)
 - [My process](#my-process)
   - [Built with](#built-with)
+  - [Challenge Deployed version](https://mohamedeldefrawy.github.io/Frontend-Mentor---QR-code-component/)
 - [Author](#author)
 
 ## Overview
